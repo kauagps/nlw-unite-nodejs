@@ -32,3 +32,6 @@ jobs:
       - name: Push image
         run: | 
           docker push kauagps/nlw.service.passin:${{ steps.generate_sha.outputs.sha }}
+          docker tag kauagps/nlw.service.passin:${{ steps.generate_sha.outputs.sha }} kauagps/nlw.service.passin:latest
+          docker push kauagps/nlw.service.passin:latest
+          
