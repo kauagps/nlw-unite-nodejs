@@ -2,7 +2,7 @@ replicaCount: 5
 image:
   repository: kauagps/nlw.service.passin
   pullPolicy: Always
-  tag: fb0b8a5
+  tag: b51218e
   port: 3333
 imagePullSecrets: []
 nameOverride: ''
