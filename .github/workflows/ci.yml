@@ -34,4 +34,14 @@ jobs:
           docker push kauagps/nlw.service.passin:${{ steps.generate_sha.outputs.sha }}
           docker tag kauagps/nlw.service.passin:${{ steps.generate_sha.outputs.sha }} kauagps/nlw.service.passin:latest
           docker push kauagps/nlw.service.passin:latest
+      
+      - name: Update image tag
+        uses: fjogeleit/yaml-update-action@main
+        with:
+          branch: main
+          valueFile: 'deploy/values.yaml'
+          propertyPath: 'image.tag'
+          value: ${{ steps.generate_sha.outputs.sha }}
+          commitChanges: true
+          message: 'new: update image tags in values helm'
           
