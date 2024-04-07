@@ -1,3 +1,13 @@
+Topicos:
+![image](https://github.com/kauagps/nlw-unite-nodejs/assets/81524853/a4849668-020a-42ec-a3eb-589bb09c728e)
+![image](https://github.com/kauagps/nlw-unite-nodejs/assets/81524853/248b9d2a-0648-4461-b68d-603881726431)
+
+Aplicações a mais utilizadas: aws, aiven, argo cd, newrelec
+
+
+
+
+
 # pass.in
 
 O pass.in é uma aplicação de **gestão de participantes em eventos presenciais**. 
